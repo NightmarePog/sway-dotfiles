@@ -28,7 +28,7 @@ set $file_explorer dolphin
 set $browser firefox
 
 # my cool wallpaper :3
-output * bg /home/nightmare/Desktop/wallpapers/joy_division_02.jpeg fill
+output * bg /home/nightmare/wallpapers/joy_division_02.jpeg fill
     output DP-3 resolution 1920x1080 position 0,0
     output HDMI-A-1 resolution 1920x1080 position 1920,0
 
@@ -67,15 +67,15 @@ client.unfocused            #1C1C1C #1C1C1C #1C1C1C #1C1C1C #1C1C1C
 client.urgent               #8A2C2C #1C1C1C #1C1C1C #1C1C1C #1C1C1C
 client.placeholder          #C0C0C0 #C0C0C0 #C0C0C0 #C0C0C0 #C0C0C0
 
-#| Barva (HEX) | Název / Pocit            | Použití                                |
+#| Color (HEX) | Name / Pocit             | use                                    |
 #| ----------- | ------------------------ | -------------------------------------- |
-#| `#0A0A0A`   | Téměř černá              | Hlavní pozadí (terminál, okna, plocha) |
-#| `#1C1C1C`   | Uhlově šedá              | Sekundární pozadí, panely              |
-#| `#444444`   | Ocelová šedá             | Rámečky, pasivní text, oddělovače      |
-#| `#C0C0C0`   | Studená stříbrná šedá    | Běžný text, ikonky, názvy souborů      |
-#| `#FFFFFF`   | Bílá                     | Zvýraznění, zvýrazněný výběr           |
-#| `#8A2C2C`   | Tmavá vínová (volitelně) | Akcenty: zvýraznění, indikátor         |
-#| `#5B5B5B`   | Studená betonová šedá    | Hover efekty, separátory               |
+#| `#0A0A0A`   | Téměř černá              | Main				   |
+#| `1C1C1C`    | Uhlově šedá              | Secondary		                   |
+#| `#444444`   | Ocelová šedá             | borders			           |
+#| `#C0C0C0`   | Studená stříbrná šedá    | text, icons 		           |
+#| `#FFFFFF`   | Bílá                     | highlight			           |
+#| `#8A2C2C`   | Tmavá vínová (volitelně) | highlight			           |
+#| `#5B5B5B`   | Studená betonová šedá    | Hover efects, separators               |
 
 ### Key bindings
 #
