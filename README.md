@@ -8,3 +8,6 @@ thx a lot to [diinki](https://github.com/diinki) - stole some configs from him a
 
 
 em, it's for now really only a backup
+
+![example](https://i.imgur.com/FmPkENN.png)
+I have dual monitor setup btw
