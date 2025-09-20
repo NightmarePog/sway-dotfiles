@@ -6,13 +6,10 @@
 
 # default super key
 set $mod Mod4
+# secondary key
+set $alt Mod1
 
-# Home row direction keys, like vim
-# not sure what it does
-set $left h
-set $down j
-set $up k
-set $right i
+# lock screen thingy
 set $swaylock /home/nightmare/.config/sway/swaylock.sh
 
 # terminal
@@ -27,10 +24,16 @@ set $file_explorer dolphin
 # browser
 set $browser firefox
 
+# window resizing keys
+set $left a
+set $down s
+set $up w
+set $right d
+
 # my cool wallpaper :3
 output * bg /home/nightmare/wallpapers/joy_division_02.jpeg fill
-    output DP-3 resolution 1920x1080 position 0,0
-    output HDMI-A-1 resolution 1920x1080 position 1920,0
+    output DP-3 resolution 1920x1080 position 1920,0
+    output HDMI-A-1 resolution 1920x1080 position 0,0
 
 
 # Status Bar:
@@ -89,13 +92,13 @@ client.placeholder          #C0C0C0 #C0C0C0 #C0C0C0 #C0C0C0 #C0C0C0
     bindsym $mod+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym $mod+space exec $menu
 
     # browser :3
     bindsym $mod+b exec $browser
 
     # screenshot thingy
-    bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy
+    bindsym $alt+Shift+s exec grim -g "$(slurp)" - | wl-copy
 
     # silly window dragging
     floating_modifier $mod normal
@@ -109,7 +112,7 @@ client.placeholder          #C0C0C0 #C0C0C0 #C0C0C0 #C0C0C0 #C0C0C0
     # lock
     bindsym $mod+l exec $swaylock 
 
-## THIS STUFF IS DEFAULT, I DIDN'T TOUCHED IT
+
 #
 # Moving around:
 #
@@ -135,7 +138,7 @@ client.placeholder          #C0C0C0 #C0C0C0 #C0C0C0 #C0C0C0 #C0C0C0
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
 
-
+## THIS STUFF IS DEFAULT, I DIDN'T TOUCHED IT
 #
 # Workspaces:
 # Not working due to my czech keyboard
@@ -174,8 +177,8 @@ client.placeholder          #C0C0C0 #C0C0C0 #C0C0C0 #C0C0C0 #C0C0C0
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
+    #bindsym $mod+s layout stacking
+    #bindsym $mod+w layout tabbed
     #bindsym $mod+e layout toggle split
 
     # Make the current focus fullscreen
@@ -185,10 +188,10 @@ client.placeholder          #C0C0C0 #C0C0C0 #C0C0C0 #C0C0C0 #C0C0C0
     bindsym $mod+Shift+space floating toggle
 
     # Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
+    #bindsym $mod+space focus mode_toggle
 
     # Move focus to the parent container
-    bindsym $mod+a focus parent
+    #bindsym $mod+a focus parent
 #
 # Scratchpad:
 #
